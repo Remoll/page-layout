@@ -25,7 +25,7 @@ const parsedDescription = computed(() =>
     class="flex items-center gap-[24px]"
     :class="{ 'flex-row-reverse': reverse }"
   >
-    <img :src="imageSrc" class="w-[583px] h-[583px]" alt="Image" />
+    <img :src="imageSrc" class="w-[583px] h-[583px] rounded-[30px]" alt="Image" />
     <div class="">
       <h1 class="text-left pb-[2rem] text-[42px] font-[700] leading-[52px]" v-html="parsedTitle" />
       <p class="text-justify text-[16px] font-[400] leading-[24px]" v-html="parsedDescription" />
