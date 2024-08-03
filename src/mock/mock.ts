@@ -1,5 +1,11 @@
 import stockbox001 from "../assets/images/stockbox001.png";
 import stockbox002 from "../assets/images/stockbox002.png";
+import img001 from "../assets/images/items001.png";
+import img002 from "../assets/images/items002.jpeg";
+import img003 from "../assets/images/items003.png";
+// import img004 from "../assets/images/items004.png";
+
+const images = [img001, img002, img003];
 
 interface InfoData {
   title: string;
@@ -43,4 +49,4 @@ const imagesWithDescriptions: ImageWithDescription[] = [
   },
 ];
 
-export { infoData, imagesWithDescriptions };
+export { images, infoData, imagesWithDescriptions };

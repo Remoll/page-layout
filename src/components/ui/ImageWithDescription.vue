@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import parseText from "../utils/parseText";
+import parseText from "../../utils/parseText";
 
-export interface Props {
+interface Props {
   imageSrc: string;
   title: string;
   description: string;
@@ -32,9 +32,3 @@ const parsedDescription = computed(() =>
     </div>
   </div>
 </template>
-
-<style scoped>
-/* .read-the-docs {
-  color: #888;
-} */
-</style>
