@@ -1,15 +1,23 @@
 <script setup>
-import { ref } from 'vue'
+import ImageWithDescription from "./ImageWithDescription.vue";
+import imagesWithDescriptions from "../mock/imagesWithDescriptions";
 
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
+function isOdd(number) {
+  return number % 2 !== 0;
+}
 </script>
 
 <template>
-  <div class="bg-red-200">test</div>
+  <div class="w-[1232px] h-[2466px]">
+    <ImageWithDescription
+      v-for="(item, index) in imagesWithDescriptions"
+      :key="index"
+      :imageSrc="item.imageSrc"
+      :title="item.title"
+      :description="item.description"
+      :reverse="isOdd(index)"
+    />
+  </div>
 </template>
 
 <style scoped>
