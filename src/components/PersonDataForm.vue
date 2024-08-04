@@ -1,57 +1,29 @@
 <template>
   <form class="space-y-4">
     <div class="grid grid-cols-1 gap-4">
-      <div class="grid grid-cols-2 gap-4">
-        <div class="col-span-1">
-          <input
-            type="text"
-            id="firstName"
-            v-model="form.firstName"
-            placeholder="First Name"
-            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-          />
-        </div>
-        <div class="col-span-1">
-          <input
-            type="text"
-            id="lastName"
-            v-model="form.lastName"
-            placeholder="Last Name"
-            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-          />
-        </div>
-      </div>
-
-      <div class="col-span-1">
-        <input
-          type="text"
-          id="street"
-          v-model="form.street"
-          placeholder="Street"
-          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+      <FormRow>
+        <TextInput
+          id="firstName"
+          v-model="form.firstName"
+          placeholder="First Name"
         />
-      </div>
+        <TextInput
+          id="lastName"
+          v-model="form.lastName"
+          placeholder="Last Name"
+        />
+      </FormRow>
 
-      <div class="grid grid-cols-2 gap-4">
-        <div class="col-span-1">
-          <input
-            type="text"
-            id="postalCode"
-            v-model="form.postalCode"
-            placeholder="Postal Code"
-            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-          />
-        </div>
-        <div class="col-span-1">
-          <input
-            type="text"
-            id="city"
-            v-model="form.city"
-            placeholder="City"
-            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-          />
-        </div>
-      </div>
+      <TextInput id="street" v-model="form.street" placeholder="Street" />
+
+      <FormRow>
+        <PostalCodeInput
+          id="postalCode"
+          v-model="form.postalCode"
+          placeholder="Postal Code"
+        />
+        <TextInput id="city" v-model="form.city" placeholder="City" />
+      </FormRow>
 
       <div class="col-span-1">
         <input
@@ -75,15 +47,24 @@
     </div>
     <button
       type="submit"
-      class="px-4 py-2 bg-indigo-600 text-white rounded-md shadow-sm hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      class="px-4 py-2 bg-indigo-600 text-white rounded-md shadow-sm hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 uppercase"
     >
-      Submit
+      Proceed to payment
     </button>
   </form>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
+
+import {
+  EmailInput,
+  PhoneNumberInput,
+  PostalCodeInput,
+  TextInput,
+} from "./ui/fields";
+
+import FormRow from "./ui/form/FormRow.vue";
 
 interface Form {
   firstName: string;
