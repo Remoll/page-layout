@@ -1,53 +1,21 @@
 <template>
-  <form class="space-y-4">
+  <form class="space-y-4 w-full">
     <div class="grid grid-cols-1 gap-4">
       <FormRow>
-        <TextInput
-          id="firstName"
-          v-model="form.firstName"
-          placeholder="First Name"
-        />
-        <TextInput
-          id="lastName"
-          v-model="form.lastName"
-          placeholder="Last Name"
-        />
+        <TextInput v-model="form.firstName" placeholder="First Name" />
+        <TextInput v-model="form.lastName" placeholder="Last Name" />
       </FormRow>
-
-      <TextInput id="street" v-model="form.street" placeholder="Street" />
-
+      <TextInput v-model="form.street" placeholder="Street" />
       <FormRow>
-        <PostalCodeInput
-          id="postalCode"
-          v-model="form.postalCode"
-          placeholder="Postal Code"
-        />
-        <TextInput id="city" v-model="form.city" placeholder="City" />
+        <TextInput v-model="form.postalCode" placeholder="Postal Code" />
+        <TextInput v-model="form.city" placeholder="City" />
       </FormRow>
-
-      <div class="col-span-1">
-        <input
-          type="text"
-          id="phoneNumber"
-          v-model="form.phoneNumber"
-          placeholder="Phone Number"
-          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-        />
-      </div>
-
-      <div class="col-span-1">
-        <input
-          type="email"
-          id="email"
-          v-model="form.email"
-          placeholder="Email"
-          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-        />
-      </div>
+      <PhoneNumberInput v-model="form.phoneNumber" placeholder="Phone Number" />
+      <EmailInput v-model="form.email" placeholder="Email" />
     </div>
     <button
       type="submit"
-      class="px-4 py-2 bg-indigo-600 text-white rounded-md shadow-sm hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 uppercase"
+      class="bg-[#006340] text-white rounded-md uppercase w-full"
     >
       Proceed to payment
     </button>
@@ -55,15 +23,8 @@
 </template>
 
 <script setup lang="ts">
+import { EmailInput, PhoneNumberInput, TextInput } from "./ui/fields";
 import { ref } from "vue";
-
-import {
-  EmailInput,
-  PhoneNumberInput,
-  PostalCodeInput,
-  TextInput,
-} from "./ui/fields";
-
 import FormRow from "./ui/form/FormRow.vue";
 
 interface Form {

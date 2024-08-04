@@ -31,11 +31,11 @@ const secureImgs = [secure001, secure002, secure003];
       <div
         class="flex flex-col items-center border-[1px] border-[#DBDBDB] rounded-[20px] p-[24px]"
       >
-        <h2 class="text-[32px] font-[500] leading-[37.5px] text-[#2D473E]">
+        <h2 class="text-[32px] font-[500] leading-[37.5px] text-[#2D473E] pb-[1.5rem]">
           Enter details
         </h2>
         <PersonDataForm />
-        <div class="flex">
+        <div class="flex mt-[2rem]">
           <img
             v-for="(src, index) in secureImgs"
             :key="index"
