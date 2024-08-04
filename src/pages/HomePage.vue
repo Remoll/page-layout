@@ -16,14 +16,24 @@ const secureImgs = [secure001, secure002, secure003];
 
 <template>
   <div class="flex items-center pb-[4rem]">
-    <Thumbnails :images="images" />
+    <div class="relative">
+      <Thumbnails :images="images" />
+      <div class="absolute flex flex-col justify-center top-[-1rem] right-0 w-[160px] h-[160px] bg-[#006340] text-[white] rounded-full">
+        <h2 class="text-[38px] font-[500] leading-[44.53px] pb-[0.5rem]">$1.99</h2>
+        <p class="text-[14px] font-[400] leading-[16.41px]">Original value $500</p>
+      </div>
+    </div>
     <div class="grow">
       <div>
         <h1>Chance to win a StockX Mystery Box today!</h1>
         <p>Unleash the Excitement of Mystery Electronics</p>
       </div>
-      <div class="flex flex-col items-center border-[1px] border-[#DBDBDB] rounded-[20px] p-[24px]">
-        <h2 class="text-[32px] font-[500] leading-[37.5px] text-[#2D473E]">Enter details</h2>
+      <div
+        class="flex flex-col items-center border-[1px] border-[#DBDBDB] rounded-[20px] p-[24px]"
+      >
+        <h2 class="text-[32px] font-[500] leading-[37.5px] text-[#2D473E]">
+          Enter details
+        </h2>
         <PersonDataForm />
         <div class="flex">
           <img
