@@ -8,7 +8,7 @@
       :placeholder="placeholder"
       :classes="{
         outer: '',
-        inner: 'overflow-hidden border border-[#ADADAD] rounded-[10px]',
+        inner: 'overflow-hidden border border-[#ADADAD] rounded-[0.625rem]',
         input: 'w-full text-[#2D473E] text-[1rem] p-[0.7rem]',
         help: 'text-xs text-gray-500',
       }"

@@ -18,20 +18,32 @@ const secureImgs = [secure001, secure002, secure003];
   <div class="flex items-center pb-[4rem]">
     <div class="relative">
       <Thumbnails :images="images" />
-      <div class="absolute flex flex-col justify-center top-[-1rem] right-0 w-[10rem] h-[10rem] bg-[#006340] text-[white] rounded-full">
-        <h2 class="text-[38px] font-[500] leading-[44.53px] pb-[0.5rem]">$1.99</h2>
-        <p class="text-[14px] font-[400] leading-[16.41px]">Original value $500</p>
+      <div
+        class="absolute flex flex-col justify-center top-[-1rem] right-0 w-[10rem] h-[10rem] bg-[#006340] text-[white] rounded-full"
+      >
+        <h2 class="text-[2.375rem] font-[500] leading-[2.783rem] pb-[0.5rem]">
+          $1.99
+        </h2>
+        <p class="text-[0.875rem] font-[400] leading-[1.026rem]">
+          Original value $500
+        </p>
       </div>
     </div>
     <div class="grow ml-[1rem]">
       <div class="text-left pb-[1rem]">
-        <h1 class="text-[52px] font-[800] leading-[55px] pb-[0.5rem]">Chance to win a StockX Mystery Box today!</h1>
-        <p class="text-[22px] font-[400] leading-[25.78px]">Unleash the Excitement of Mystery Electronics</p>
+        <h1 class="text-[3.25rem] font-[800] leading-[3.438rem] pb-[0.5rem]">
+          Chance to win a StockX Mystery Box today!
+        </h1>
+        <p class="text-[1.375rem] font-[400] leading-[1.611rem]">
+          Unleash the Excitement of Mystery Electronics
+        </p>
       </div>
       <div
-        class="flex flex-col items-center border-[1px] border-[#DBDBDB] rounded-[20px] p-[24px]"
+        class="flex flex-col items-center border-[0.063rem] border-[#DBDBDB] rounded-[1.25rem] p-[1.563rem]"
       >
-        <h2 class="text-[32px] font-[500] leading-[37.5px] text-[#2D473E] pb-[1.5rem]">
+        <h2
+          class="text-[2rem] font-[500] leading-[2.344rem] text-[#2D473E] pb-[1.5rem]"
+        >
           Enter details
         </h2>
         <PersonDataForm />
@@ -40,7 +52,7 @@ const secureImgs = [secure001, secure002, secure003];
             v-for="(src, index) in secureImgs"
             :key="index"
             :src="src"
-            class="h-[40px] w-fit"
+            class="h-[2.5rem] w-fit"
             alt="Image"
           />
         </div>
@@ -49,12 +61,14 @@ const secureImgs = [secure001, secure002, secure003];
   </div>
 
   <h1
-    class="w-[790px] text-[48px] font-[700] leading-[52px] text-[#2D473E] mx-auto pb-[0.5rem]"
+    class="w-[49.375rem] text-[3rem] font-[700] leading-[3.25rem] text-[#2D473E] mx-auto pb-[0.5rem]"
   >
     Top Tech Mystery Box at Unbeatable Prices
   </h1>
 
-  <p class="text-[20px] font-[500] leading-[23.44px] text-[#006340] pb-[2rem]">
+  <p
+    class="text-[1.25rem] font-[500] leading-[1.465rem] text-[#006340] pb-[2rem]"
+  >
     Fast shipping | Easy returns | Special discounts for students
   </p>
 

@@ -15,7 +15,7 @@
     </div>
     <button
       type="submit"
-      class="bg-[#006340] text-white rounded-md uppercase w-full"
+      class="bg-[#006340] text-white rounded-md uppercase w-full py-[0.5rem] font-600"
     >
       Proceed to payment
     </button>
