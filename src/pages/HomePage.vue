@@ -19,7 +19,7 @@ const secureImgs = [secure001, secure002, secure003];
     <div class="relative">
       <Thumbnails :images="images" />
       <div
-        class="absolute flex flex-col justify-center top-[-1rem] right-0 w-[10rem] h-[10rem] bg-[#006340] text-[white] rounded-full"
+        class="absolute flex flex-col justify-center top-[-1rem] right-0 w-[10rem] h-[10rem] bg-mainColor text-[white] rounded-full"
       >
         <h2 class="text-[2.375rem] font-[500] leading-[2.783rem] pb-[0.5rem]">
           $1.99
@@ -42,7 +42,7 @@ const secureImgs = [secure001, secure002, secure003];
         class="flex flex-col items-center border-[0.063rem] border-[#DBDBDB] rounded-[1.25rem] p-[1.563rem]"
       >
         <h2
-          class="text-[2rem] font-[500] leading-[2.344rem] text-[#2D473E] pb-[1.5rem]"
+          class="text-[2rem] font-[500] leading-[2.344rem] text-text-2 pb-[1.5rem]"
         >
           Enter details
         </h2>
@@ -61,13 +61,13 @@ const secureImgs = [secure001, secure002, secure003];
   </div>
 
   <h1
-    class="w-[49.375rem] text-[3rem] font-[700] leading-[3.25rem] text-[#2D473E] mx-auto pb-[0.5rem]"
+    class="w-[49.375rem] text-[3rem] font-[700] leading-[3.25rem] text-text-2 mx-auto pb-[0.5rem]"
   >
     Top Tech Mystery Box at Unbeatable Prices
   </h1>
 
   <p
-    class="text-[1.25rem] font-[500] leading-[1.465rem] text-[#006340] pb-[2rem]"
+    class="text-[1.25rem] font-[500] leading-[1.465rem] text-mainColor pb-[2rem]"
   >
     Fast shipping | Easy returns | Special discounts for students
   </p>
@@ -89,9 +89,3 @@ const secureImgs = [secure001, secure002, secure003];
     <CreditCards />
   </div>
 </template>
-
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>

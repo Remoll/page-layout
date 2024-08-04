@@ -37,7 +37,7 @@ interface ImageWithDescription extends InfoData {
 const imagesWithDescriptions: ImageWithDescription[] = [
   {
     imageSrc: stockbox001,
-    title: "Curious about the [color=#006340]StockX[/color] Mystery Box?",
+    title: "Curious about the [color=mainColor]StockX[/color] Mystery Box?",
     description:
       "Experience the thrill of unboxing cutting-edge gadgets with Stockx Mystery Boxes. Each box is a treasure trove of high-quality electronics, handpicked to elevate your tech game. \nExpect the unexpected! Our boxes are packed with the latest gadgets, from smartphones to gaming consoles, ensuring you get the best tech surprises every time.",
   },

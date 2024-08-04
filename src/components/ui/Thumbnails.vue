@@ -7,7 +7,7 @@
       <div
         v-for="image in unselectedImages"
         :key="image"
-        class="cursor-pointer w-[8.25rem] h-[8.25rem] border-[0.058rem] border-[#006340] rounded-[0.871rem] overflow-hidden box-border mx-[0.5rem]"
+        class="cursor-pointer w-[8.25rem] h-[8.25rem] border-[0.058rem] border-mainColor rounded-[0.871rem] overflow-hidden box-border mx-[0.5rem]"
         :class="{ active: image === selectedImage }"
         @click="selectImage(image)"
       >

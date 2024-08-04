@@ -1,7 +1,7 @@
 const parseText = (text: string) => {
   text = text.replace(
     /\[color=(.*?)\](.*?)\[\/color\]/g,
-    '<span class="text-[$1]">$2</span>'
+    '<span class="text-$1">$2</span>'
   );
   text = text.replace(
     /\[underline\](.*?)\[\/underline\]/g,

@@ -9,7 +9,7 @@
       :classes="{
         outer: '',
         inner: 'overflow-hidden border border-[#ADADAD] rounded-[0.625rem]',
-        input: 'w-full text-[#2D473E] text-[1rem] p-[0.7rem]',
+        input: 'w-full text-text-2 text-[1rem] p-[0.7rem]',
         help: 'text-xs text-gray-500',
       }"
       :validation-messages="validationMessages"
